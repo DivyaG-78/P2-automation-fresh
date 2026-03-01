@@ -14,10 +14,11 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Reporting Tests') {
             steps {
-                bat '"C:\\Users\\nagra\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest'
+                bat '"C:\\Users\\nagra\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest P2_ModuleWise_Tests/Test_P2.py -v'
             }
         }
+        
     }
 }
