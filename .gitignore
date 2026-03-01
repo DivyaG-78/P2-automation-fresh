@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# PyCharm
+.idea/
+
+# Reports
+Reports/
+Screenshots/
+
+# OS
+.DS_Store

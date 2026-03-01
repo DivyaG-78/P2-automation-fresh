@@ -1,0 +1,29 @@
+{
+  "vendor": "Rank One Computing",
+  "license": {
+    "product": "ROC SDK",
+    "version": "3.9",
+    "expiry": "2026-02-28",
+    "hostid": "any",
+    "customer": "FaceFirst",
+    "userdata": {
+            "account": "RankOne",
+            "face": true,
+            "gpus": 1,
+            "grade": "evaluation",
+            "license_server": {
+                "encrypted": true,
+                "hostname": "roc-license.facefirst.dev",
+                "instances": 3,
+                "max_timeout": 60,
+                "port": 1443,
+                "timeout": 60
+            },
+            "logging": false,
+            "templates": 10000000,
+            "threads": 128
+        },
+    "minversion": "1.13",
+    "signature": "3041021f008c2b849b21f1ba7fdd8b8197768cb806b2c514b03c77ae01b9389ad9be02021e139d3c06f3990f938103aeeb97cb7178828e9a6482b4c9c164b9ef390a86"
+  }
+}

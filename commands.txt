@@ -1,0 +1,17 @@
+cdpytest -v -s .\test_suite_core_0.py --html="Results/test_suite_core_0.html"
+pytest -v -s .\test_suite_edge_0.py --html="Results/test_suite_edge_0.html"
+pytest -v -s .\test_suite_portal_1.py --html="Results/test_suite_portal_1.html"
+pytest -v -s .\test_suite_portal_2.py --html="Results/test_suite_portal_2.html"
+pytest -v -s .\test_suite_other_dm_3.py --html="Results/test_suite_other_dm_3.html"
+pytest -v -s .\P1_Module_wise\Test_P1_Set_1.py --html="Results/p1_5Dec.html"
+
+pytest -v -s -m "enrollment_search1" P1_Module_Wise\Test_P1_Set_2.py --html="Results/enrollment_date_range_with_organization_and_enrollment_basis.html"
+pytest -v -s -m P1_Module_Wise\Test_P1_Set_2.py
+pytest -v -s -m "vs" P2_ModuleWise_Tests\Test_P2.py --html="Reports/vs.html"
+
+pytest -v -s -m "sit or enrollments or enrollment_search" P1_Module_Wise\Test_P1_Set_2.py --html="Results/sit_en_es.html"
+
+commands for playwright setup
+1. pip install pytest-playwright
+2. playwright install
+
