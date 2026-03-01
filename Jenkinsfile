@@ -8,6 +8,12 @@ pipeline {
             }
         }
 
+        stage('Install Playwright Browsers') {
+            steps {
+                bat '"C:\\Users\\nagra\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m playwright install'
+            }
+        }
+
         stage('Run Tests') {
             steps {
                 bat '"C:\\Users\\nagra\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest'
