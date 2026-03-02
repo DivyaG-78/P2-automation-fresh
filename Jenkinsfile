@@ -22,8 +22,17 @@ pipeline {
     }
 
     post {
-        always {
-            archiveArtifacts artifacts: 'report.html', fingerprint: true
+    always {
+        archiveArtifacts artifacts: 'report.html', fingerprint: true
+
+        publishHTML([
+            reportName: 'Automation Report',
+            reportDir: '.',
+            reportFiles: 'report.html',
+            keepAll: true,
+            alwaysLinkToLastBuild: true,
+            allowMissing: false
+             ])
         }
     }
 }
