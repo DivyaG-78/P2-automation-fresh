@@ -16,9 +16,14 @@ pipeline {
 
         stage('Run Reporting Tests') {
             steps {
-                bat '"C:\\Users\\nagra\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest P2_ModuleWise_Tests/Test_P2.py -v'
+                bat '"C:\\Users\\nagra\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" -m pytest P2_ModuleWise_Tests/Test_P2.py -v --html=report.html --self-contained-html'
             }
         }
-        
+    }
+
+    post {
+        always {
+            archiveArtifacts artifacts: 'report.html', fingerprint: true
+        }
     }
 }
