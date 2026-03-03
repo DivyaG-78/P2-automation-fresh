@@ -35,11 +35,12 @@ pipeline {
                ])
        }
     }
+
     post {
     failure {
         mail to: 'golidivya770@gmail.com',
              subject: "Build Failed: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
              body: "Check Jenkins build: ${env.BUILD_URL}"
-            }
         }
+    }
 }
