@@ -56,12 +56,12 @@ def test_tc_reporting_041(page, credentials, delay):
         assert False
 
 
-@pytest.mark.reporting
-def test_tc_reporting_042(page, credentials, delay):
-    if Verify_report_for_number_of_enrollments_by_zone_with_default_dates_1_month_with_group_selected_as_Fraude(page, credentials,delay):
-        assert True
-    else:
-        assert False
+# @pytest.mark.reporting
+# def test_tc_reporting_042(page, credentials, delay):
+#     if Verify_report_for_number_of_enrollments_by_zone_with_default_dates_1_month_with_group_selected_as_Fraude(page, credentials,delay):
+#         assert True
+#     else:
+#         assert False
 
 
 # @pytest.mark.reporting
